@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #25123b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 600px;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #572abb;
+  padding: 45px;
+  /* box-shadow: 5px 3px 5px white; */
+  box-shadow: 0 0 10px 15px rgba(239, 221, 221, 0.1);
+}
+.buttons-grid {
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-around;
+}
+button {
+  width: 90px;
+  height: 30px;
+  color: #fff;
+  background-color: #080125;
+  outline: none;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+  font-family: "Sedan SC", serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+#text {
+  outline: none;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: #edeade;
+  height: 100px;
+  font-family: "Sedan SC", serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+img {
+  width: 150px;
+  height: 120px;
+}
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.names {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+.names h1 {
+  font-family: "Sedan SC", serif;
+  font-size: 22px;
+}
+@media (max-width: 480px) {
+  .container {
+    width: 300px;
+    padding: 20px;
+  }
+  img {
+    width: 120px;
+    height: 120px;
+  }
+  .controls {
+    justify-content: space-between;
+  }
+}
